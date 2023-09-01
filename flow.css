@@ -5,7 +5,30 @@ body{
     font-size: 16px;
 
 }
+.titulo{
+     
+  position: center;
+  
 
+  color: #753c3c;
+  letter-spacing: 5px;
+  font-size: 40px;
+  overflow: hidden;
+ 
+  
+}
+.text{
+    background: transparent;  
+  position: relative;
+  display: inline-block;
+
+  color: #fff;
+  letter-spacing: 5px;
+  font-size: 20px;
+  overflow: hidden;
+ 
+  
+}
  
 /* vertical */
 @media (orientation: portrait) {
@@ -16,31 +39,76 @@ body{
         justify-content: center;
         align-items: center;
         height: 80vh;     
+       
     }
     
     .boton1{
+        background: transparent;  
       position: relative;
       display: inline-block;
-      padding: 15px 30px;
+    
       color: #fff;
-      letter-spacing: 4px;
-      font-size: 24px;
-      text-decoration: none;
+      letter-spacing: 5px;
+      font-size: 15px;
       overflow: hidden;
-      transition: 0.2s;   
+      transition: 0.2s; 
       
+    }
+
+    .boton1:hover{
+        background: blueviolet;
+        box-shadow: 0 0 10px blueviolet, 0 0 40px
+        blueviolet, 0 0 80px blueviolet;
+         
+    }
+
+    .boton2{
+        background: transparent;  
+      position: relative;
+      display: inline-block;
+    
+      color: #fff;
+      letter-spacing: 5px;
+      font-size: 15px;
+      overflow: hidden;
+      transition: 0.2s; 
+      
+    }
+
+    .boton2:hover{
+        background: blueviolet;
+        box-shadow: 0 0 10px blueviolet, 0 0 40px
+        blueviolet, 0 0 80px blueviolet;
+         
+    }
+
+    .boton3{
+        background: transparent;  
+      position: relative;
+      display: inline-block;
+    
+      color: #fff;
+      letter-spacing: 5px;
+      font-size: 15px;
+      overflow: hidden;
+      transition: 0.2s; 
+      
+    }
+
+    .boton3:hover{
+        background: blueviolet;
+        box-shadow: 0 0 10px blueviolet, 0 0 40px
+        blueviolet, 0 0 80px blueviolet;
+         
     }
    
         .container{
             display: grid;
             grid-template-rows:8% 70% auto;
             
-            background: url(./fol.jpg) center;
+            background: url(./ia.png) center;
             background-size: cover;
-            /* grid-gap: 10px;
-            grid-auto-rows: minmax(100px, auto); */
             height:  100vh;
-            /* place-items: center; */
             text-align: center; 
         }
         .one{
@@ -50,13 +118,44 @@ body{
         }
         .left{
        
-         
+            display: grid;
+            place-items: center;
+            text-align: center;
          
         }
-        .mode{   
+        .mode{ 
+            grid-template-rows:80% 2% auto;
             display: grid;
-            place-items: center; 
+            
+            place-items: center;  
             transform: scale(1);
+        }
+        .btn{
+            grid-row: 2;
+            display: grid;
+            
+            place-items: center;  
+              
+        }
+
+        .boton4{
+            background: transparent;  
+          position: relative;
+          display: inline-block;
+        
+          color: #fff;
+          letter-spacing: 5px;
+          font-size: 15px;
+          overflow: hidden;
+          transition: 0.2s; 
+          
+        }
+
+        .boton4:hover{
+            background: blueviolet;
+            box-shadow: 0 0 10px blueviolet, 0 0 40px
+            blueviolet, 0 0 80px blueviolet;
+            transition-delay: 1s;
         }
     }
      
@@ -67,31 +166,80 @@ body{
     .botones{
         margin: 0;
         padding: 0;
-        display: grid;
+        display:grid;
+        justify-content: center;
         place-items: center;
+        height: 80vh;
         
-        
-        height: 80vh;     
+            
     }
-    
+  
     .boton1{
+        background: transparent;  
       position: relative;
       display: inline-block;
-      padding: 15px 30px;
+    
       color: #fff;
-      letter-spacing: 4px;
-      font-size: 24px;
-      text-decoration: none;
+      letter-spacing: 5px;
+      font-size: 15px;
       overflow: hidden;
-      transition: 0.2s;   
+      transition: 0.2s; 
       
     }
+
+    .boton1:hover{
+        background: blueviolet;
+        box-shadow: 0 0 10px blueviolet, 0 0 40px
+        blueviolet, 0 0 80px blueviolet;
+         
+    }
+
+    .boton2{
+        background: transparent;  
+      position: relative;
+      display: inline-block;
     
+      color: #fff;
+      letter-spacing: 5px;
+      font-size: 15px;
+      overflow: hidden;
+      transition: 0.2s; 
+      
+    }
+
+    .boton2:hover{
+        background: blueviolet;
+        box-shadow: 0 0 10px blueviolet, 0 0 40px
+        blueviolet, 0 0 80px blueviolet;
+         
+    }
+
+    .boton3{
+        background: transparent;  
+      position: relative;
+      display: inline-block;
+    
+      color: #fff;
+      letter-spacing: 5px;
+      font-size: 15px;
+      overflow: hidden;
+      transition: 0.2s; 
+      
+    }
+
+    .boton3:hover{
+        background: blueviolet;
+        box-shadow: 0 0 10px blueviolet, 0 0 40px
+        blueviolet, 0 0 80px blueviolet;
+         
+    }
+ 
         .container{
             display: grid;
             grid-template-rows:15% 50% auto;
             
-            background: url(./fol.jpg) center;
+            background: url(./ia.png
+            ) center;
             background-size: cover;
             /* grid-gap: 10px;
             grid-auto-rows: minmax(100px, auto); */
@@ -110,10 +258,41 @@ body{
         text-align: center;
         }
         .mode{ 
+            grid-template-rows:85% 10% auto;
             display: grid;
+            
             place-items: center;  
             transform: scale(1);
         }
+        .btn{
+            grid-row: 2;
+            display: grid;
+            
+            place-items: center;  
+            
+        }
+
+        .boton4{
+            background: transparent;  
+          position: relative;
+          display: inline-block;
+        
+          color: #fff;
+          letter-spacing: 5px;
+          font-size: 15px;
+          overflow: hidden;
+          transition: 0.2s; 
+          
+        }
+
+        .boton4:hover{
+            background: blueviolet;
+            box-shadow: 0 0 10px blueviolet, 0 0 40px
+            blueviolet, 0 0 80px blueviolet;
+            transition-delay: 1s;
+        }
+        
+       
     }
 
    
