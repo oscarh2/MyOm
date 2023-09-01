@@ -84,7 +84,8 @@ canvas.appendChild(renderer.domElement);
 // renderer.shadowMap.enabled = true
 // renderer.gammaOuput = true
 var controls = new OrbitControls(camera, renderer.domElement);
-
+controls.autoRotate = true;
+controls.autoRotateSpeed = 1.0;
 //   Para actualizar pantalla automaticamente
 //   window.addEventListener('resize',redimencionar);
       
@@ -95,14 +96,13 @@ var controls = new OrbitControls(camera, renderer.domElement);
 //      renderer.render(scene, camera);
 //   }
  
-    animate()
+    animate();
  
 var i=0;
-function animate(){
+function animate(time){
     requestAnimationFrame(animate)
  
-       //camera.rotation.y += 0.01;
-    
+       controls.update(time)
         renderer.render(scene,camera);
     }
     

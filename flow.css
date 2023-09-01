@@ -5,81 +5,12 @@ body{
     font-size: 16px;
 
 }
-.botones{
-    margin: 0;
-    padding: 0;
-    display: grid;
-    place-items: center;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;     
-}
-
-.boton1{
-  position: relative;
-  display: inline-block;
-  padding: 15px 30px;
-  color: #fff;
-  letter-spacing: 4px;
-  font-size: 24px;
-  text-decoration: none;
-  overflow: hidden;
-  transition: 0.2s;   
-  
-}
-
-.boton1:hover{
- background: rebeccapurple;
-}
-
-.boton2{
-    
-    
-}
-
-.boton3{
-    
-}
-
-.container{
-    display: grid;
-    grid-template-rows:15% 80% auto; 
-    background: url(./fol.jpg) center;
-    background-size: cover;
-    /* grid-gap: 10px;
-    grid-auto-rows: minmax(100px, auto); */
-    height:  100vh;
-    /* place-items: center; */
-    text-align: center;
-  
-}
-
-.one{
-    display: grid;
-    grid-template-columns:30% 70% auto;
-    height: 80vh;
-   
-}
-
-.left{
-display: grid;
-place-items: center;
-text-align: center;
- 
-
-}
-.mode{   
-    display: grid;
-    place-items: center;
-    transform: scale(1);
-}
 
  
 /* vertical */
 @media (orientation: portrait) {
     .botones{
-        margin: 0;
-        padding: 0;
+       
         display: grid;
         place-items: center;
         justify-content: center;
@@ -102,7 +33,7 @@ text-align: center;
    
         .container{
             display: grid;
-            grid-template-rows:11% 70% auto;
+            grid-template-rows:8% 70% auto;
             
             background: url(./fol.jpg) center;
             background-size: cover;
@@ -118,11 +49,13 @@ text-align: center;
             height: 80vh;  
         }
         .left{
-        display: grid;
-        place-items: center;
-        text-align: center;
+       
+         
+         
         }
         .mode{   
+            display: grid;
+            place-items: center; 
             transform: scale(1);
         }
     }
@@ -136,8 +69,8 @@ text-align: center;
         padding: 0;
         display: grid;
         place-items: center;
-        justify-content: center;
-        align-items: center;
+        
+        
         height: 80vh;     
     }
     
@@ -156,7 +89,7 @@ text-align: center;
     
         .container{
             display: grid;
-            grid-template-rows:15% 20% auto;
+            grid-template-rows:15% 50% auto;
             
             background: url(./fol.jpg) center;
             background-size: cover;
@@ -168,7 +101,7 @@ text-align: center;
         }
         .one{
             display: grid;
-            grid-template-columns:20% 80% auto;
+            grid-template-columns:30% 70% auto;
             height: 80vh;  
         }
         .left{
@@ -176,7 +109,9 @@ text-align: center;
         place-items: center;
         text-align: center;
         }
-        .mode{   
+        .mode{ 
+            display: grid;
+            place-items: center;  
             transform: scale(1);
         }
     }
