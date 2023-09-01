@@ -5,33 +5,23 @@ body{
     font-size: 16px;
 
 }
-.titulo{
-     
-  position: center;
-  
 
-  color: #753c3c;
-  letter-spacing: 5px;
-  font-size: 40px;
-  overflow: hidden;
- 
-  
-}
-.text{
-    background: transparent;  
-  position: relative;
-  display: inline-block;
 
-  color: #fff;
-  letter-spacing: 5px;
-  font-size: 20px;
-  overflow: hidden;
- 
   
-}
- 
 /* vertical */
 @media (orientation: portrait) {
+    .titulo{
+        position: center;
+        color: #753c3c;
+        letter-spacing: 5px;
+        font-size: 25px;
+      }
+      .text{   
+        position: center;
+        color: #fff;
+        letter-spacing: 3px;
+        font-size: 10px;
+      }
     .botones{
        
         display: grid;
@@ -147,7 +137,7 @@ body{
           letter-spacing: 5px;
           font-size: 15px;
           overflow: hidden;
-          transition: 0.2s; 
+          transition: 0.1s; 
           
         }
 
@@ -156,12 +146,38 @@ body{
             box-shadow: 0 0 10px blueviolet, 0 0 40px
             blueviolet, 0 0 80px blueviolet;
             transition-delay: 1s;
+            transform: scale3d(1.5, 1.5, 0.3);
         }
     }
      
 
 /* horizontal */
 @media (orientation: landscape) {
+
+    .titulo{
+     
+        position: center;
+        
+      
+        color: #753c3c;
+        letter-spacing: 5px;
+        font-size: 20px;
+         
+       
+        
+      }
+      .text{
+          background: transparent;  
+        position: relative;
+        display: inline-block;
+      
+        color: #fff;
+        letter-spacing: 5px;
+        font-size: 20px;
+        overflow: hidden;
+       
+        
+      }
 
     .botones{
         margin: 0;
@@ -191,7 +207,8 @@ body{
         background: blueviolet;
         box-shadow: 0 0 10px blueviolet, 0 0 40px
         blueviolet, 0 0 80px blueviolet;
-         
+        transform: scale3d(1.5, 1.5, 0.3);
+       
     }
 
     .boton2{
@@ -211,6 +228,7 @@ body{
         background: blueviolet;
         box-shadow: 0 0 10px blueviolet, 0 0 40px
         blueviolet, 0 0 80px blueviolet;
+        transform: scale3d(1.5, 1.5, 0.3);
          
     }
 
@@ -231,7 +249,8 @@ body{
         background: blueviolet;
         box-shadow: 0 0 10px blueviolet, 0 0 40px
         blueviolet, 0 0 80px blueviolet;
-         
+        transform: scale3d(1.5, 1.5, 0.3);
+        
     }
  
         .container{
@@ -250,18 +269,19 @@ body{
         .one{
             display: grid;
             grid-template-columns:30% 70% auto;
-            height: 80vh;  
+            height: 70vh;  
         }
         .left{
         display: grid;
-        place-items: center;
-        text-align: center;
+        
+       
         }
         .mode{ 
-            grid-template-rows:85% 10% auto;
-            display: grid;
             
-            place-items: center;  
+            grid-template-rows:70% 2% auto;
+            display: grid;
+            place-items: center;
+            height: 70vh;  
             transform: scale(1);
         }
         .btn{
@@ -276,7 +296,7 @@ body{
             background: transparent;  
           position: relative;
           display: inline-block;
-        
+          padding: 15px 30px;
           color: #fff;
           letter-spacing: 5px;
           font-size: 15px;
@@ -286,12 +306,14 @@ body{
         }
 
         .boton4:hover{
-            background: blueviolet;
+             background: blueviolet;
             box-shadow: 0 0 10px blueviolet, 0 0 40px
             blueviolet, 0 0 80px blueviolet;
-            transition-delay: 1s;
-        }
         
+            transform: scale3d(1.5, 1.5, 0.3);
+                -webkit-transform: scale3d(1.5, 1.5, 0.3);
+                -moz-transform: scale3d(1.5, 1.5, 0.3);
+        }
        
     }
 
