@@ -42,12 +42,12 @@ boton.addEventListener('click', () => {
 });
 const boton1 = document.getElementById('mod2');
 boton1.addEventListener('click', () => {
-    changeModel('gl/casa2.glb'); // Cambia al segundo modelo
+    changeModel('gl/bob.glb'); // Cambia al segundo modelo
 });
 
 const boton2 = document.getElementById('mod3');
 boton2.addEventListener('click', () => {
-    changeModel('gl/casa3.glb'); // Cambia al segundo modelo
+    changeModel('gl/tienda_oxxo.glb'); // Cambia al segundo modelo
 });
  
 
